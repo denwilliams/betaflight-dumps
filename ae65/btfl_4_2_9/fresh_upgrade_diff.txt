@@ -1,0 +1,55 @@
+# version
+# Betaflight / STM32F411 (S411) 4.2.9 Apr 27 2021 / 19:33:23 (e097f4ab7) MSP API: 1.43
+# config: manufacturer_id: HAMO, board_name: CRAZYBEEF4DX, version: a074838b, date: 2021-06-14T21:36:54Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name CRAZYBEEF4DX
+manufacturer_id HAMO
+mcu_id 004900293439511636383737
+signature 
+
+# name: Den
+
+# feature
+feature -AIRMODE
+
+# master
+set acc_calibration = 12,-23,-218,1
+set gyro_1_align_yaw = 900
+set name = Den
+
+profile 0
+
+# profile 0
+set acro_trainer_angle_limit = 15
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

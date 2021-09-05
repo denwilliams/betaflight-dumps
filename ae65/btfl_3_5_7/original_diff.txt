@@ -1,0 +1,188 @@
+# version
+# Betaflight / CRAZYBEEF4DX (C4DX) 3.5.7 Mar 15 2019 / 21:41:52 (e9130527c) MSP API: 1.40
+
+board_name CRAZYBEEF4FR
+manufacturer_id 
+mcu_id 004900293439511636383737
+signature 
+
+# reset configuration to default settings
+defaults nosave
+
+# name
+name Den
+
+# resources
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -TELEMETRY
+feature -ANTI_GRAVITY
+
+# beeper
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# map
+map AETR1234
+
+# serial
+serial 0 64 115200 57600 0 115200
+serial 1 2048 115200 57600 0 115200
+
+# led
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1800 2100 0 0
+aux 1 13 3 1275 1675 0 0
+aux 2 19 1 1700 2100 0 0
+aux 3 28 2 1300 2100 0 0
+aux 4 35 3 1800 2100 0 0
+aux 5 47 2 1300 1675 0 0
+
+# adjrange
+adjrange 0 0 1 900 1200 12 1 0 0
+adjrange 1 1 1 1200 1800 12 1 0 0
+adjrange 2 2 1 1800 2100 12 1 0 0
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set gyro_lowpass2_hz = 0
+set acc_trim_pitch = -4
+set rc_smoothing_type = FILTER
+set serialrx_provider = SBUS
+set dshot_idle_value = 550
+set motor_pwm_protocol = DSHOT600
+set vbat_max_cell_voltage = 45
+set vbat_min_cell_voltage = 29
+set vbat_warning_cell_voltage = 30
+set ibata_scale = 1175
+set yaw_motors_reversed = ON
+set small_angle = 180
+set deadband = 2
+set yaw_deadband = 5
+set pid_process_denom = 1
+set osd_warn_batt_not_full = OFF
+set osd_warn_esc_fail = OFF
+set osd_warn_core_temp = OFF
+set osd_vbat_pos = 2433
+set osd_rssi_pos = 314
+set osd_tim_2_pos = 375
+set osd_flymode_pos = 2457
+set osd_throttle_pos = 344
+set osd_crosshairs_pos = 2253
+set osd_ah_pos = 2126
+set osd_current_pos = 288
+set osd_mah_drawn_pos = 2368
+set osd_craft_name_pos = 2442
+set osd_warnings_pos = 2345
+set osd_avg_cell_voltage_pos = 353
+set osd_disarmed_pos = 2314
+set osd_stat_tim_1 = ON
+set osd_stat_endbatt = ON
+set osd_stat_battery = ON
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set vtx_band = 5
+set vtx_channel = 6
+set vtx_power = 2
+set vtx_freq = 5843
+set vcd_video_system = NTSC
+
+# profile
+profile 0
+
+set dterm_lowpass2_hz = 0
+set dterm_notch_cutoff = 0
+set feedforward_transition = 21
+set iterm_relax = RPY
+set acro_trainer_angle_limit = 10
+set p_pitch = 80
+set i_pitch = 100
+set d_pitch = 85
+set f_pitch = 140
+set p_roll = 85
+set i_roll = 100
+set d_roll = 85
+set f_roll = 140
+set p_yaw = 120
+set i_yaw = 100
+set f_yaw = 140
+
+# profile
+profile 1
+
+set dterm_lowpass2_hz = 0
+set dterm_notch_cutoff = 0
+set p_pitch = 52
+set p_roll = 51
+set p_yaw = 72
+set i_yaw = 55
+set f_yaw = 100
+
+# profile
+profile 2
+
+
+# restore original profile selection
+profile 0
+
+# rateprofile
+rateprofile 0
+
+set roll_rc_rate = 90
+set pitch_rc_rate = 90
+set yaw_rc_rate = 150
+set roll_srate = 60
+set pitch_srate = 60
+set yaw_srate = 50
+
+# rateprofile
+rateprofile 1
+
+
+# rateprofile
+rateprofile 2
+
+set roll_rc_rate = 70
+set pitch_rc_rate = 70
+set yaw_rc_rate = 150
+set roll_srate = 50
+set pitch_srate = 50
+set yaw_srate = 40
+
+# rateprofile
+rateprofile 3
+
+
+# rateprofile
+rateprofile 4
+
+
+# rateprofile
+rateprofile 5
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# q

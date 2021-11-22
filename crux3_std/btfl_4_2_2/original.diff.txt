@@ -1,0 +1,122 @@
+# version
+# Betaflight / STM32F411 (S411) 4.2.2 Aug 16 2020 / 01:47:01 (e833ac612) MSP API: 1.43
+# config: manufacturer_id: HAMO, board_name: CRAZYBEEF4FS, version: 33522b3a, date: 2019-11-08T05:50:23Z
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name CRAZYBEEF4FS
+manufacturer_id HAMO
+mcu_id 006200384e56500c20363955
+signature 
+
+# name: CRUX3
+
+# serial
+serial 1 2048 115200 57600 0 115200
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+
+# vtxtable
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B FACTORY 5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E FACTORY 5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F FACTORY 5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 IMD6     I CUSTOM  5732 5765 5828 5840 5866 5740    0    0
+vtxtable powerlevels 3
+vtxtable powervalues 0 1 2
+vtxtable powerlabels 25 100 200
+
+# master
+set gyro_lowpass2_hz = 400
+set dyn_notch_width_percent = 0
+set dyn_lpf_gyro_min_hz = 320
+set dyn_lpf_gyro_max_hz = 800
+set acc_calibration = 50,6,-75,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set dshot_idle_value = 450
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set vbat_min_cell_voltage = 320
+set vbat_warning_cell_voltage = 330
+set ibata_scale = 1175
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_vbat_pos = 2456
+set osd_rssi_pos = 2402
+set osd_tim_1_pos = 2081
+set osd_tim_2_pos = 2113
+set osd_flymode_pos = 2434
+set osd_vtx_channel_pos = 2101
+set osd_crosshairs_pos = 2253
+set osd_current_pos = 2423
+set osd_mah_drawn_pos = 2392
+set osd_craft_name_pos = 2412
+set osd_debug_pos = 4330
+set osd_disarmed_pos = 2314
+set osd_core_temp_pos = 2369
+set vtx_band = 5
+set vtx_channel = 6
+set vtx_power = 3
+set vtx_low_power_disarm = ON
+set vtx_freq = 5843
+set gyro_1_align_yaw = 900
+set flysky_spi_tx_id = 931549298
+set flysky_spi_rf_channels = 155,53,35,84,130,76,22,102,160,60,13,90,149,43,3,111
+set name = CRUX3
+
+profile 0
+
+# profile 0
+set dyn_lpf_dterm_min_hz = 112
+set dyn_lpf_dterm_max_hz = 272
+set dterm_lowpass2_hz = 240
+set vbat_pid_gain = ON
+set anti_gravity_gain = 5000
+set iterm_relax_cutoff = 20
+set p_pitch = 86
+set p_roll = 82
+set p_yaw = 85
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 105
+set pitch_rc_rate = 105
+set roll_srate = 73
+set pitch_srate = 73
+set tpa_breakpoint = 1650
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 

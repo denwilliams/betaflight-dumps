@@ -1,0 +1,180 @@
+# version
+# Betaflight / CRAZYBEEF4FR (C4FR) 3.5.7 Mar 15 2019 / 21:42:20 (e9130527c) MSP API: 1.40
+
+board_name CRAZYBEEF4FR
+manufacturer_id 
+mcu_id 0059004b3230510d35333739
+signature 
+
+# reset configuration to default settings
+defaults nosave
+
+# name
+name Moblite7
+
+# resources
+resource MOTOR 1 B08
+resource MOTOR 2 B07
+resource MOTOR 3 B06
+resource MOTOR 4 B10
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+feature -TELEMETRY
+feature -ANTI_GRAVITY
+feature LED_STRIP
+
+# beeper
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# map
+
+# serial
+serial 1 2048 115200 57600 0 115200
+
+# led
+led 0 0,7::COI:0
+led 1 7,7::CTO:0
+led 2 8,7::CTO:0
+led 3 15,7::COI:0
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 1 1800 2100 0 0
+aux 1 1 2 1100 1275 0 0
+aux 2 13 0 1300 1700 0 0
+aux 3 28 2 1700 2100 0 0
+aux 4 35 0 1800 2100 0 0
+aux 5 47 2 1300 1700 0 0
+
+# adjrange
+adjrange 0 0 1 900 1200 12 1 0 0
+adjrange 1 1 1 1200 1800 12 1 0 0
+adjrange 2 2 1 1800 2100 12 1 0 0
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# master
+set gyro_lowpass2_hz = 0
+set acc_calibration = 1,40,202
+set rc_smoothing_type = FILTER
+set rx_spi_protocol = FRSKY_D
+set dshot_idle_value = 550
+set motor_pwm_protocol = DSHOT600
+set align_board_yaw = 180
+set vbat_max_cell_voltage = 45
+set vbat_min_cell_voltage = 29
+set vbat_warning_cell_voltage = 30
+set ibata_scale = 1175
+set yaw_motors_reversed = ON
+set small_angle = 180
+set deadband = 1
+set yaw_deadband = 1
+set pid_process_denom = 1
+set osd_warn_batt_not_full = OFF
+set osd_warn_batt_warning = OFF
+set osd_warn_esc_fail = OFF
+set osd_warn_core_temp = OFF
+set osd_rssi_pos = 2362
+set osd_tim_1_pos = 2422
+set osd_tim_2_pos = 375
+set osd_flymode_pos = 2457
+set osd_throttle_pos = 2392
+set osd_current_pos = 2336
+set osd_mah_drawn_pos = 2368
+set osd_craft_name_pos = 2442
+set osd_warnings_pos = 2345
+set osd_avg_cell_voltage_pos = 2401
+set osd_disarmed_pos = 2314
+set osd_core_temp_pos = 2305
+set osd_stat_tim_1 = ON
+set osd_stat_max_spd = OFF
+set osd_stat_battery = ON
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set vtx_band = 1
+set vtx_power = 3
+set vtx_freq = 5865
+set vcd_video_system = NTSC
+set frsky_spi_tx_id = 184,206
+set frsky_spi_offset = -33
+set frsky_spi_bind_hop_data = 0,30,60,91,120,150,180,210,5,35,65,95,125,155,185,215,10,40,70,100,130,160,190,221,15,45,75,105,135,165,195,225,20,50,80,110,140,170,200,230,25,55,85,115,145,175,205,0,0,0
+
+# profile
+profile 0
+
+set dterm_lowpass2_hz = 0
+set dterm_notch_cutoff = 0
+set feedforward_transition = 21
+set iterm_relax = RPY
+set p_pitch = 80
+set i_pitch = 100
+set d_pitch = 85
+set f_pitch = 140
+set p_roll = 85
+set i_roll = 100
+set d_roll = 85
+set f_roll = 140
+set p_yaw = 120
+set i_yaw = 100
+set f_yaw = 140
+
+# profile
+profile 1
+
+
+# profile
+profile 2
+
+
+# restore original profile selection
+profile 0
+
+# rateprofile
+rateprofile 0
+
+set tpa_rate = 30
+set tpa_breakpoint = 1200
+
+# rateprofile
+rateprofile 1
+
+
+# rateprofile
+rateprofile 2
+
+
+# rateprofile
+rateprofile 3
+
+
+# rateprofile
+rateprofile 4
+
+
+# rateprofile
+rateprofile 5
+
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
+# 
